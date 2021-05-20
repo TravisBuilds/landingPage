@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import instagramLogo from '../assets/ig.png';
+import instagramLogo from '../assetPack/MerchantPage/instagram.png';
 
 const MerchantSignup = () => {
   const [name, setName] = useState('');

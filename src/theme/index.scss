@@ -4,14 +4,20 @@ html {
 }
 
 body {
-    font-family: Raleway, sans-serif;
+    font-family: pixeboy , sans-serif;
     font-weight: 100;
-    background-image: linear-gradient(#3736A1, #8283C5);
+    background-image: url(../assetPack/MerchantPage/background.png);
     background-attachment: fixed;
     color: white;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face{
+    font-family: 'pixeboy'; 
+    src: url(../fonts/Pixeboy.ttf)
+    
 }
 
 code {
@@ -105,11 +111,11 @@ a {
 }
 
 .merchant-signup-box {
-    border: 1px solid #3736A1;
+    border: 2px solid lightgreen;
     border-radius: 5px;
     margin-top: 30px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(40, 16, 63, 0.55);
 
     .col:first-of-type {
         border-right: 1px solid white;
@@ -121,8 +127,9 @@ a {
         font-weight: 400;
         font-size: 18px;
 
+
         i {
-            color: lightblue;
+            color: lightgreen;
         }
     }
 
