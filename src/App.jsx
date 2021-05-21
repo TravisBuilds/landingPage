@@ -30,7 +30,7 @@ function App() {
           <WalletProvider>
             <ProductProvider>
               <StoreProvider>
-                <NavBar />
+                {/* <NavBar /> */}
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/market" component={Market} />

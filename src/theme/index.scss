@@ -6,18 +6,17 @@ html {
 body {
     font-family: pixeboy , sans-serif;
     font-weight: 100;
-    background-image: url(../assetPack/MerchantPage/background.png);
+    // background-image: url(../assetPack/MerchantPage/background.png);
     background-attachment: fixed;
-    color: white;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face{
-    font-family: 'pixeboy'; 
+    font-family: 'pixeboy';
     src: url(../fonts/Pixeboy.ttf)
-    
+
 }
 
 code {

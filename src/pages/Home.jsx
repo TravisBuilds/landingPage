@@ -24,6 +24,17 @@ import metaverse from '../assets/backgroundMetaverse.png';
 import liquidityMining from '../assets/liquidityMining.png';
 import marketplace from '../assets/marketplace.png';
 
+import topPattern from '../assets-new/topPattern.png';
+import newLogo from '../assets-new/logoPlaceholder.png';
+import bondingCurve from '../assets-new/bondingcurveWhole.png';
+import box from '../assets-new/box.png';
+import ethBackdrop from '../assets-new/ethBackdrop.png';
+import litePaper from '../assets-new/lite.png';
+import paperBtn from '../assets-new/paper.png';
+import bgPurpleSkymasked from '../assets-new/purpleSkymasked.png';
+import vrBtn from '../assets-new/vr.png';
+import webBtn from '../assets-new/web.png';
+
 const Home = () => {
   const [showAvatarModal, setShowAvatarModal] = useState(false);
   const [email, setEmail] = useState('');
@@ -63,12 +74,12 @@ const Home = () => {
                 </h1>
                 <div className="mb-2">
                   <div className="loginButton">
-                    <Button variant="light" onClick={() => User.connectWallet(wallet)}>
-                      <img src={metamask} alt="metamask" />
+                    <Button variant="light" onClick={() => '#open pdf'}>
+                      <img src={paperBtn} alt="paper" />
                     </Button>
 
                     <Button variant="outline-light" onClick={() => { window.location.href = '/merchant-signup'; }}>
-                      <img src={brands} alt="brands" />
+                      <img src={brands} alt="" />
                     </Button>
                   </div>
                 </div>
@@ -76,7 +87,7 @@ const Home = () => {
 
               <div className="shrinkGone">
                 <Col>
-                  <Image src={rpm} height="300px" />
+                  <Image src={topPattern} height="400px" />
                 </Col>
               </div>
             </Row>
@@ -84,39 +95,27 @@ const Home = () => {
         </Jumbotron>
       </div>
 
-      <Jumbotron className="text-center">
-        <h2>Enter Highstreet</h2>
+      <Jumbotron className="text-center" style={{ backgroundImage: `url(${bgPurpleSkymasked})`, color: 'white' }}>
+        <h2>Here at Highstreet</h2>
         <h4>Shop for Limited Edition Products or Shake Your Street Tokens for Rewards</h4>
         <Container>
-          <Row>
-            <Col>
-              <a href="/about">
-                <Image src={liquidityMining} fluid rounded />
-                <h4>Liquidity Mining</h4>
-              </a>
-            </Col>
-            <Col>
-              <a href="/market">
-                <Image src={marketplace} fluid rounded />
-                <h4>Marketplace</h4>
-              </a>
-            </Col>
-          </Row>
+          <Image src={bondingCurve} alt="bonding curve" />
         </Container>
       </Jumbotron>
 
-      <Jumbotron style={{ backgroundImage: `url(${metaverse})` }} fluid>
+      <Jumbotron style={{ backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover', color: 'white' }} fluid>
         <Container>
-          <h1>Explore Our Metaverse with Friends </h1>
-          <h3><i>A digital version of every product you buy wil automatically be available to your Avatar</i></h3>
-          <Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} style={{ width: '50%' }} />
-          <br />
-          <Button onClick={generateAvatar}>Generate Avatar</Button>
-          <AvatarGenerator
-            show={showAvatarModal}
-            close={() => setShowAvatarModal(false)}
-            email={email} // need to move to a user provider or something
-          />
+          <h1>Two ways to enter the market</h1>
+          <Container>
+            <Row>
+              <Col>
+                <Image src={vrBtn} fluid />
+              </Col>
+              <Col>
+                <Image src={webBtn} fluid />
+              </Col>
+            </Row>
+          </Container>
         </Container>
       </Jumbotron>
 
