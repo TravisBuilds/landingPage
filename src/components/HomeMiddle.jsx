@@ -26,7 +26,8 @@ function HomeMiddle() {
         <Row>
           <Col></Col>
           <Col>
-            <Button variant="outline-light">Learn More</Button>
+          <br></br>
+            <Button variant="outline-light" onClick={() => window.open("https://github.com/TravisBuilds/HighStreet")}>Learn More</Button>
           </Col>
           <Col></Col>
         </Row>
