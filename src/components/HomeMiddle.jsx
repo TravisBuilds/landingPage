@@ -12,7 +12,7 @@ function HomeMiddle() {
         <h2>Here at Highstreet</h2>
         <h4>Shop for Limited Edition Products or Shake Your Street Tokens for Rewards</h4>
         <Container>
-          <Image src={bondingCurve} alt="bonding curve" />
+          <Image src={bondingCurve} alt="bonding curve" fluid />
         </Container>
       </Jumbotron>
   );
