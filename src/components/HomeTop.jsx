@@ -18,7 +18,7 @@ function HomeTop() {
   };
 
   return (
-      <Jumbotron fluid style={topPatternBg}>
+      <Jumbotron fluid style={topPatternBg} className="homeTop">
         <Container>
           <Row>
             <Col>
@@ -33,18 +33,18 @@ function HomeTop() {
               <div className="mb-2">
                 <div className="loginButton">
                   <Button variant="light" onClick={() => '#open pdf'}>
-                    <img src={paperBtn} alt="paper" />
+                    <img src={paperBtn} alt="paper" height="50" />
                   </Button>
 
                   <Button variant="outline-light" onClick={() => { window.location.href = '/merchant-signup'; }}>
-                    <img src={brands} alt="" />
+                    <img src={brands} alt="" height="50" />
                   </Button>
                 </div>
               </div>
             </Col>
 
-            <Col>
-              <Image src={box} fluid />
+            <Col className="box">
+              <Image src={box} height="400" />
             </Col>
           </Row>
         </Container>
