@@ -5,26 +5,33 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import Bvideo from '../assets-new/backgroundvideo.mp4'
+import ethBackdrop from '../assets-new/ethBackdrop.png';
 
 function HomeMiddleTwo() {
     return (
-        <div>
+        <Jumbotron className="text-center" style={{
+            backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat', color: 'white'
+        }} fluid>
 
-       <video autoPlay loop muted style={{
-        position: "absolute",
-        width:"100%",
-        left:"100%",
-        top: "50%",
-        height: "100%",
-        objectPit:"cover",
-        transform:"transalte(-50%, -50%)",
-        zIndex:"-1",
-        
-      }}>
-       <source src={Bvideo} type='video/mp4'/> 
-      </video>
-     </div>
-    )
+            <Container>
+                <h1 style={{ fontSize: '400%' }}>Proof of play liquidity mining </h1>
+                <h3 style={{ color: 'skyblue', fontSize: "220%", lineHeight: '1px' }}> <span style={{ color: "#7587D1" }}>Available for PCVR on</span> Viveport </h3>
+                <br></br><br></br>
+                <Container>
+                    <Row>
+
+                    </Row>
+                    <Row>
+                        <Col></Col>
+                        <Col>
+                            <Button variant="outline-success">Generate Avatar First</Button>
+                        </Col>
+                        <Col></Col>
+                    </Row>
+                </Container>
+            </Container>
+        </Jumbotron>
+    );
 }
 export default HomeMiddleTwo;
