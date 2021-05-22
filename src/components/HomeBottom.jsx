@@ -3,6 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import { useHistory } from 'react-router-dom';
 import useInjectedWeb3 from '../components/Hooks/useInjectedWeb3';
@@ -11,6 +12,7 @@ import AvatarGenerator from '../components/AvatarGenerator';
 import ProductProvider from '../contexts/ProductProvider';
 import WalletProvider from '../contexts/WalletProvider';
 import User from '../libs/user';
+import Bvideo from '../assets-new/backgroundvideo.mp4';
 
 import ethBackdrop from '../assets-new/ethBackdrop.png';
 import vrBtn from '../assets-new/vr.png';
@@ -33,24 +35,47 @@ function HomeBottom() {
   const generateAvatar = () => {
     setShowAvatarModal(true);
     User.save({
-      email,
+     // email,
       walletAddress: wallet.address
     });
   };
 
   return (
-    <Jumbotron style={{ backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover', color: 'white' }} fluid>
+    <Jumbotron className="text-center" style={{   backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
+      {/* <video autoPlay loop muted style={{
+        position: "absolute",
+        width:"100%",
+        left:"100%",
+        top: "50%",
+        height: "100%",
+        objectPit:"cover",
+        transform:"transalte(-50%, -50%)",
+        zIndex:"-1",
+        poster:{ethBackdrop}
+      }}>
+       <source src={Bvideo} type='video/mp4'/> 
+      </video> */}
       <Container>
-        <h1>Two ways to enter the market</h1>
+      <h1 style={{ fontSize: '500%' }}>two ways to ener the market </h1>
+      <h3 style={{ color: '#B5FF67', fontSize: "220%", lineHeight: '1px' }}> <span style={{color:"#FF8B8B"}}>Red Pill</span><span style={{color:"#7581EA"}}>Blue Pill</span>Take Your Pick</h3>
+      <br></br><br></br> 
         <Container>
           <Row>
             <Col>
-              <Image src={vrBtn} fluid />
+              <Image src={vrBtn} fluid style={{width:'50%'}} />
             </Col>
             <Col>
-              <Image src={webBtn} fluid />
+              <Image src={webBtn} fluid style={{width:'50%'}} />
             </Col>
           </Row>
+          <Row>
+          <Col></Col>
+          <Col>
+            <Button variant="outline-success" onClick={generateAvatar}>Create Avatar</Button>
+          </Col>
+          <Col></Col>
+        </Row>
         </Container>
       </Container>
     </Jumbotron>

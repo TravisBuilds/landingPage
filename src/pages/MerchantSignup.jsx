@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import instagramLogo from '../assetPack/MerchantPage/instagram.png';
+import merchantBackground from '../assets-new/merchantBackground.png'
 
 const MerchantSignup = () => {
   const [name, setName] = useState('');
@@ -21,7 +22,9 @@ const MerchantSignup = () => {
   };
 
   return (
-    <div className="text-center merchant-signup">
+    <div className="text-center merchant-signup" style={{ backgroundImage: `url(${merchantBackground})`, backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',color: 'white' }}>
+      
       <h1>Merchant Portal</h1>
       <h4>Sign up with instagram for Early Access</h4>
 
@@ -48,7 +51,7 @@ const MerchantSignup = () => {
               <Form.Control type="email" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="text" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '50%' }} />
-              <Button>Signup</Button>
+              <Button variant="outline-success">Signup</Button>
             </div>
           </Col>
         </Row>
