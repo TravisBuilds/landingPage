@@ -26,7 +26,7 @@ function HomeMiddle() {
         <Row>
           <Col></Col>
           <Col>
-            <Button variant="outline-light">Lite Paper</Button>
+            <Button variant="outline-light">Learn More</Button>
           </Col>
           <Col></Col>
         </Row>

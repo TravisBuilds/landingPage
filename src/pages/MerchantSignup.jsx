@@ -51,7 +51,7 @@ const MerchantSignup = () => {
               <Form.Control type="email" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="text" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '50%' }} />
-              <Button variant="outline-success">Signup</Button>
+              <Button style={{width:'150px'}} variant="outline-success">Signup</Button>
             </div>
           </Col>
         </Row>

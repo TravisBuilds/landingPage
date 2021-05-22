@@ -11,6 +11,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height:100%;
 }
 
 @font-face{
@@ -107,7 +108,8 @@ a {
 }
 
 .merchant-signup {
-    margin-top: 50px;
+   height:100%;
+   padding-top:60px;
 }
 
 .merchant-signup-box {
@@ -145,9 +147,10 @@ a {
     .form-control {
         background-color: transparent;
         margin: 10px auto;
+        color:white;
 
         &::placeholder {
-            color: white;
+            color: grey;
         }
     }
 
@@ -182,7 +185,7 @@ a {
     margin: 0 auto;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
     .homeTop {
         background: none !important;
         text-align: center;

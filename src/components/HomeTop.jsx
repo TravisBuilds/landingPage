@@ -37,12 +37,12 @@ function HomeTop() {
                 </h1>
               <div className="mb-2">
                 <div className="loginButton">
-                  <Button variant="light" onClick={() => '#open pdf'}>
-                    <img src={paperBtn} alt="paper" height="50" />
+                  <Button style={{width:'220px', borderRadius:'0',border: 'none', background: 'linear-gradient(#D9D0F4, #7587D1)'}} size='lg' variant="primary" onClick={() => window.open("https://github.com/TravisBuilds/HighStreet")}>
+                   Paper
                   </Button>
 
-                  <Button variant="outline-light" onClick={() => { window.location.href = '/merchant-signup'; }}>
-                    <img src={brands} alt="" height="50" />
+                  <Button style={{width: '220px',color: '#7587D1', borderColor:'#7587D1', borderRadius:'0'}} size="lg" variant="outline-light" onClick={() => { window.location.href = '/merchant-signup'; }}>
+                    Merchant 
                   </Button>
                 </div>
               </div>
