@@ -43,19 +43,7 @@ function HomeBottom() {
   return (
     <Jumbotron className="text-center" style={{   backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
-      {/* <video autoPlay loop muted style={{
-        position: "absolute",
-        width:"100%",
-        left:"100%",
-        top: "50%",
-        height: "100%",
-        objectPit:"cover",
-        transform:"transalte(-50%, -50%)",
-        zIndex:"-1",
-        poster:{ethBackdrop}
-      }}>
-       <source src={Bvideo} type='video/mp4'/> 
-      </video> */}
+     
       <Container>
       <h1 style={{ fontSize: '500%' }}>two ways to ener the market </h1>
       <h3 style={{ color: '#B5FF67', fontSize: "220%", lineHeight: '1px' }}> <span style={{color:"#FF8B8B"}}>Red Pill</span><span style={{color:"#7581EA"}}>Blue Pill</span>Take Your Pick</h3>
@@ -72,13 +60,15 @@ function HomeBottom() {
           <Row>
           <Col></Col>
           <Col>
-            <Button variant="outline-success" onClick={generateAvatar}>Create Avatar</Button>
+            {/* <Button variant="outline-success" onClick={generateAvatar}>Create Avatar</Button> */}
+            <h2 style={{ color: '#B5FF67'}}>Coming Soon in June</h2>
           </Col>
           <Col></Col>
         </Row>
         </Container>
       </Container>
     </Jumbotron>
+   
   );
 }
 

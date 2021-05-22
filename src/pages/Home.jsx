@@ -2,6 +2,7 @@ import React from 'react';
 import HomeTop from '../components/HomeTop';
 import HomeMiddle from '../components/HomeMiddle';
 import HomeBottom from '../components/HomeBottom';
+import HomeMiddleTwo from '../components/HomeMiddleTwo';
 import Footer from '../components/Footer';
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeTop />
       <HomeMiddle />
       <HomeBottom />
+      <HomeMiddleTwo />
       <Footer />
     </div>
   );
