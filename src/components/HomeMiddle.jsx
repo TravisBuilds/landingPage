@@ -19,7 +19,7 @@ function HomeMiddle() {
         <Image style={{width:'60%'}} src={bondingCurve} alt="bonding curve" fluid />
         <br></br><br></br><br></br>
         <Row>
-          <Col> <h2> Always Have Liquidity </h2></Col>
+          <Col> <h2> 24/7 Liquidity </h2></Col>
           <Col><h2> Redeem Physical Products</h2></Col>
           <Col><h2> Price Discovery by Fans </h2></Col>
         </Row>

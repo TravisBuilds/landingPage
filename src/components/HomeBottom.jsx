@@ -40,6 +40,9 @@ function HomeBottom() {
     });
   };
 
+
+
+  
   return (
     <Jumbotron className="text-center" style={{   backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
