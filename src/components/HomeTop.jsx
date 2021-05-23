@@ -28,10 +28,10 @@ function HomeTop() {
              />
              <br></br><br></br>
               <h3 style={{color:'#83A75D', fontSize: '220%'}}>Buy, Trade, and Redeem</h3>
-              <h1 style={{ fontSize: '450%', color:'#7587D1', lineHeight:'60px' }}>
+              <h1 style={{ fontSize: '450%', color:'#7587D1' }}>
                 Redeemable
                   <br />
-                  Limited Edition 
+                  Limited Edition
                   <br />
                   Products
                 </h1>
@@ -42,7 +42,7 @@ function HomeTop() {
                   </Button>
 
                   <Button style={{width: '220px',color: '#7587D1', borderColor:'#7587D1', borderRadius:'0'}} size="lg" variant="outline-light" onClick={() => { window.location.href = '/merchant-signup'; }}>
-                    Merchant 
+                    Merchant
                   </Button>
                 </div>
               </div>

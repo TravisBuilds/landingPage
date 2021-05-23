@@ -15,25 +15,25 @@ function Footer() {
 
     <Jumbotron className="text-center" style={{   backgroundImage: `url(${footer})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
-      <h3 style={{ color: '#7587D1', fontSize: "220%", lineHeight: '1px' }}>Highstreet Residents</h3>
+      <h3 style={{ color: '#7587D1', fontSize: "220%" }}>Highstreet Residents</h3>
      <br></br><br></br>
       <Container>
-       
+
         <Row>
           <Col></Col>
-          <Col></Col>   
           <Col></Col>
-          <Col></Col>  
-          <Col><a href='https://t.me/joinchat/_uUMfr2-VaA2ODFl'><Image style={{width:'30%'}} src={telegram} alt="telegram" fluid /></a></Col>     
-          <Col><a href='https://github.com/TravisBuilds/HighStreet'><Image style={{width:'30%'}} src={github} alt="github" fluid /></a></Col>    
-          <Col><a href='https://highstreet-market.gitbook.io/highstreet/'><Image style={{width:'30%'}} src={gitbook} alt="gitbook" fluid /></a></Col>    
-          <Col></Col>     
-          <Col></Col>    
-          <Col></Col>       
-          <Col></Col>  
+          <Col></Col>
+          <Col></Col>
+          <Col><a href='https://t.me/joinchat/_uUMfr2-VaA2ODFl'><Image style={{width:'30%'}} src={telegram} alt="telegram" fluid /></a></Col>
+          <Col><a href='https://github.com/TravisBuilds/HighStreet'><Image style={{width:'30%'}} src={github} alt="github" fluid /></a></Col>
+          <Col><a href='https://highstreet-market.gitbook.io/highstreet/'><Image style={{width:'30%'}} src={gitbook} alt="gitbook" fluid /></a></Col>
+          <Col></Col>
+          <Col></Col>
+          <Col></Col>
+          <Col></Col>
         </Row>
-     
-       </Container>    
+
+       </Container>
     </Jumbotron>
     // <Jumbotron fluid>
     //   <Container>

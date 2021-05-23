@@ -42,15 +42,15 @@ function HomeBottom() {
 
 
 
-  
+
   return (
     <Jumbotron className="text-center" style={{   backgroundImage: `url(${ethBackdrop})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
-     
+
       <Container>
       <h1 style={{ fontSize: '500%' }}>two ways to ener the market </h1>
-      <h3 style={{ color: '#B5FF67', fontSize: "220%", lineHeight: '1px' }}> <span style={{color:"#FF8B8B"}}>Red Pill</span><span style={{color:"#7581EA"}}>Blue Pill</span>Take Your Pick</h3>
-      <br></br><br></br> 
+      <h3 style={{ color: '#B5FF67', fontSize: "220%" }}> <span style={{color:"#FF8B8B"}}>Red Pill</span><span style={{color:"#7581EA"}}>Blue Pill</span>Take Your Pick</h3>
+      <br></br><br></br>
         <Container>
           <Row>
             <Col>
@@ -71,7 +71,7 @@ function HomeBottom() {
         </Container>
       </Container>
     </Jumbotron>
-   
+
   );
 }
 

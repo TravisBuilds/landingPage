@@ -15,13 +15,13 @@ import useLoadinjectedEthersState from '../components/Hooks/useLoadInjectedEther
 import User from '../libs/user';
 
 function HomeMiddleTwo() {
-    
+
     const [showAvatarModal, setShowAvatarModal] = useState(false);
 
     const history = useHistory();
     const handleClick = (path) => {
         history.push(path);
-        
+
     };
 
     const wallet = useContext(WalletProvider.context);
@@ -34,9 +34,9 @@ function HomeMiddleTwo() {
           walletAddress: wallet.address
         });
       };
-      
-    
-      
+
+
+
     return (
         <Jumbotron className="text-center" style={{
             color: 'white', overflow: 'hidden', padding: '0', height: '500px', background: 'rgba(0,0,0,0.7)'
@@ -46,7 +46,7 @@ function HomeMiddleTwo() {
             />
             <Container>
                 <h1 style={{ marginTop: '1em', fontSize: '400%' }}>Proof of play liquidity mining </h1>
-                <h3 style={{ color: 'skyblue', fontSize: "220%", lineHeight: '1px' }}> <span style={{ color: "#7587D1" }}>Available for PCVR on</span> Viveport </h3>
+                <h3 style={{ color: 'skyblue', fontSize: "220%" }}> <span style={{ color: "#7587D1" }}>Available for PCVR on</span> Viveport </h3>
                 <br></br><br></br>
                 <Container>
                     <Row>
@@ -62,16 +62,16 @@ function HomeMiddleTwo() {
                     </Row>
                 </Container>
             </Container>
-            
+
             <AvatarGenerator
             show={showAvatarModal}
             close={() => setShowAvatarModal(false)}
-          
+
           />
-            
- 
+
+
         </Jumbotron>
-        
+
     );
 }
 export default HomeMiddleTwo;

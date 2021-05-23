@@ -14,7 +14,7 @@ function HomeMiddle() {
     <Jumbotron className="text-center" style={{ backgroundImage: `url(${bgPurpleSkymasked})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',color: 'white' }}>
       <h1 style={{ fontSize: '500%' }}>Here at Highstreet</h1>
-      <h3 style={{ color: '#B5FF67', fontSize: "220%", lineHeight: '1px' }}>Everything is on a bonding curve</h3>
+      <h3 style={{ color: '#B5FF67', fontSize: "220%" }}>Everything is on a bonding curve</h3>
       <Container>
         <Image style={{width:'60%'}} src={bondingCurve} alt="bonding curve" fluid />
         <br></br><br></br><br></br>
