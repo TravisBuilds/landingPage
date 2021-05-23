@@ -18,13 +18,19 @@ const MerchantSignup = () => {
   };
 
   const signup = () => {
-
+    fetch('/api/merchant', {
+      method: 'POST',
+      contentType: 'application/json',
+      body: JSON.stringify({
+        name, email
+      })
+    })
   };
 
   return (
     <div className="text-center merchant-signup" style={{ backgroundImage: `url(${merchantBackground})`, backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',color: 'white' }}>
-      
+
       <h1>Merchant Portal</h1>
       <h4>Sign up with instagram for Early Access</h4>
 
@@ -51,7 +57,7 @@ const MerchantSignup = () => {
               <Form.Control type="email" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="text" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ width: '50%' }} />
               <Form.Control type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '50%' }} />
-              <Button style={{width:'150px'}} variant="outline-success">Signup</Button>
+              <Button style={{width:'150px'}} variant="outline-success" onClick={signup}>Signup</Button>
             </div>
           </Col>
         </Row>

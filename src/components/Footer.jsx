@@ -24,9 +24,9 @@ function Footer() {
           <Col></Col>
           <Col></Col>
           <Col></Col>
-          <Col><a href='https://t.me/joinchat/_uUMfr2-VaA2ODFl'><Image style={{width:'30%'}} src={telegram} alt="telegram" fluid /></a></Col>
-          <Col><a href='https://github.com/TravisBuilds/HighStreet'><Image style={{width:'30%'}} src={github} alt="github" fluid /></a></Col>
-          <Col><a href='https://highstreet-market.gitbook.io/highstreet/'><Image style={{width:'30%'}} src={gitbook} alt="gitbook" fluid /></a></Col>
+          <Col><a href='https://t.me/joinchat/_uUMfr2-VaA2ODFl'><Image style={{width: '30px'}} src={telegram} alt="telegram" fluid /></a></Col>
+          <Col><a href='https://github.com/TravisBuilds/HighStreet'><Image style={{width: '30px'}} src={github} alt="github" fluid /></a></Col>
+          <Col><a href='https://highstreet-market.gitbook.io/highstreet/'><Image style={{width: '30px'}} src={gitbook} alt="gitbook" fluid /></a></Col>
           <Col></Col>
           <Col></Col>
           <Col></Col>

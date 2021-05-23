@@ -12,6 +12,7 @@ const passport = require('./lib/passport');
 const Auth = require('./routes/auth');
 const Product = require('./routes/product');
 const User = require('./routes/user');
+const Merchant = require('./routes/merchant');
 
 const app = express();
 
@@ -26,6 +27,8 @@ app.get('/auth/instagram/callback', passport.authenticate('instagram', { failure
 app.post('/api/user', User.emailSignup);
 app.get('/api/user/:walletAddress', User.getByWalletAddress);
 app.post('/api/user/connectMetamask', User.connectMetamask);
+
+app.post('/api/merchant', Merchant.signup);
 
 app.get('/api/products', Product.list);
 
