@@ -48,7 +48,7 @@ function HomeBottom() {
     backgroundRepeat: 'no-repeat', color: 'white' }} fluid>
 
       <Container>
-      <h1 style={{ fontSize: '500%' }}>two ways to ener the market </h1>
+      <h1 style={{ fontSize: '500%' }}>two ways to enter the market </h1>
       <h3 style={{ color: '#B5FF67', fontSize: "220%" }}> <span style={{color:"#FF8B8B"}}>Red Pill</span><span style={{color:"#7581EA"}}>Blue Pill</span>Take Your Pick</h3>
       <br></br><br></br>
         <Container>
