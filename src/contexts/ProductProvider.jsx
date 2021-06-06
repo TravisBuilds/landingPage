@@ -2,14 +2,14 @@ import React, { createContext, useReducer } from 'react';
 // import { McdPlugin } from '@makerdao/dai'; // makerdao is a library that allows for interaction with the DAI coin.
 import { ethers } from 'ethers';
 import ProductReducer from './ProductReducer';
-import kalonCard from '../assets/product1.png';
-import loreal from '../assets/product2.png';
-import mystery from '../assets/product3.png';
-import lvmh from '../assets/product4.png';
-import kalonfeature from '../assets/kalon.png';
-import lvmhfeature from '../assets/lvmh.png';
-import lorealfeature from '../assets/loreal.png';
-import randomfeature from '../assets/randomfeature.png';
+// import kalonCard from '../assets/product1.png';
+// import loreal from '../assets/product2.png';
+// import mystery from '../assets/product3.png';
+// import lvmh from '../assets/product4.png';
+// import kalonfeature from '../assets/kalon.png';
+// import lvmhfeature from '../assets/lvmh.png';
+// import lorealfeature from '../assets/loreal.png';
+// import randomfeature from '../assets/randomfeature.png';
 
 // import ProductToken.sol
 // Initial Placeholder

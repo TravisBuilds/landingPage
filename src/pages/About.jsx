@@ -1,5 +1,5 @@
 import React from 'react';
-import tokenomics from '../assets/tokenomics.png';
+//import tokenomics from '../assets/tokenomics.png';
 import '../theme/about.css';
 
 const About = () => (
@@ -19,7 +19,7 @@ const About = () => (
       Our market make use of a Proof of Play system of liquidity mining, where to incentivize users to join us in the metaverse, we’ve partnered with HTC’s Viveport platform to provide rewards in Street Tokens to any users that complete certain tasks inside the Metaverse version of our Market Place . To even further incentivize users, any product tokens purchased through depositing our platform are eligible for staking rewards carved out from our transaction fees. A purchase fee of 4% and sell fee of 2% is collected, 1% of pool each goes towards the merchant, 1% of each will go towards our insurance fund, but the final 2 percent from the purchase fee will be allocated as staking rewards.
     </p>
 
-    <img src={tokenomics} alt="tokenomics" />
+   
   </div>
 );
 

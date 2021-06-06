@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import instagramLogo from '../assetPack/MerchantPage/instagram.png';
+import instagramLogo from '../assets-new/instagram.png';
 import merchantBackground from '../assets-new/merchantBackground.png'
 
 const MerchantSignup = () => {

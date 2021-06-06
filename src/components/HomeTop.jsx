@@ -7,8 +7,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
 import topPattern from '../assets-new/topPattern.png';
-import paperBtn from '../assets-new/paper.png';
-import brands from '../assets/brands.png';
+
 import box from '../assets-new/box.png';
 import logo from '../assets-new/logo.png';
 

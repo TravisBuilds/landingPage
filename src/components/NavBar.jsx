@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import WalletProvider from '../contexts/WalletProvider';
 import User from '../libs/user';
-import logo from '../assetPack/homePage/logo.png';
+import logo from '../assets-new/logo.png';
 
 const NavBar = () => {
   const context = useContext(WalletProvider.context);
@@ -16,9 +16,9 @@ const NavBar = () => {
         <Navbar.Brand href="/">
           <img
             src={logo}
-            width='240'
-            // width="30"
-            // height="30"
+           
+             width="30"
+             height="30"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />
