@@ -1,2 +1,5 @@
 node_modules
 /.git/MERGE_MSG"
+/.env
+/id_rsa.pub
+/id_rsa.pub.pub
